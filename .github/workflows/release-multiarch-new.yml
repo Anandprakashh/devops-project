@@ -70,3 +70,15 @@ jobs:
               docker rm -f "$container_id" || true
               exit 1
             fi
+          done
+          docker rm -f "$container_id" || true
+
+      - name: Create GitHub Release
+        uses: softprops/action-gh-release@v1
+        with:
+          tag_name: ${{ github.ref_name }}
+          name: ${{ github.ref_name }}
+          body: |
+            Release ${{ github.ref_name }}
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
