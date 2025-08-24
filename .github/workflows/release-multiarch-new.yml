@@ -1,4 +1,4 @@
-name: Release: multi-arch build, test, publish, release
+name: "Release: multi-arch build, test, publish, release"
 
 on:
   push:
@@ -15,7 +15,7 @@ jobs:
       issues: write
       actions: read
     env:
-      IMAGE_REPO_LC: ${{ github.repository_owner }}/${{ github.event.repository.name }}
+      IMAGE_REPO_LC: ${{ github.repository }}
     steps:
       - name: Checkout
         uses: actions/checkout@v4
