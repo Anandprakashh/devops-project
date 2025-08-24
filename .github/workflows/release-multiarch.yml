@@ -1,5 +1,4 @@
-name: 
-  Release: multi-arch build, test, publish, release
+name: Release:multi-arch build, test, publish, release
 on:
   push:
     tags:
