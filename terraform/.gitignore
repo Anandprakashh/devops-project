@@ -1,0 +1,33 @@
+# Python
+.venv/
+venv/
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+env/
+env.bak
+
+# Terraform
+.terraform/
+*.tfstate
+*.tfstate.backup
+crash.log
+override.tf
+override.tf.json
+terraform.tfvars
+.terraform.lock.hcl
+
+# Docker
+docker-compose.override.yml
+*.log
+
+# IDE / editor
+.vscode/
+.idea/
+*.swp
+*~ 
+
+# OS
+.DS_Store
+Thumbs.db
